@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Background Image</title>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #0a0a23;
+    }
+
+    .background {
+      width: 1584px; 
+      height: 360px; 
+      color: white;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 40px;
+    }
+
+    .title-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      color: #a8dadc;
+    }
+
+    .skills {
+      position: absolute;
+      top: 5px;
+      left: 50%;               
+      width: 50%;             
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 1.1em;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .im img{
+      position: absolute;
+      left: 70%;               
+      width: 50%;
+      border-radius: 40px;
+    }
+
+    .skill {
+      padding: 10px 0;
+      font-size: 1.1em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .skill-title {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #a8dadc;
+    }
+
+    .skill-icon {
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+      background-color: #07e637;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .sublist {
+      margin: 8px 0 0 24px; 
+      font-size: 0.75em;
+      color: #d1e8e2;
+      list-style-type: circle;
+    }
+
+    .circuit-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('/toback.jpg'); 
+      background-size: cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="circuit-overlay"></div>
+    <div class="content">
+      <img src="/logo1.jpg" alt="Your Logo" class="logo"> 
+      <div class="title-container">
+        <div class="title">Full-Stack Developer</div>
+        <div class="subtitle">Electronics, Communication, and Computer Science Engineer</div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="skill">
+        <div class="skill-title">
+          <span class="skill-icon"></span> Front-End Development
+        </div>
+        <ul class="sublist">
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>Vue.js</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span class="skill-icon"></span> Back-End Development
+        </div>
+        <ul class="sublist">
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>SQL</li>
+          <li>subabase</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span class="skill-icon"></span> Network Engineering
+        </div>
+        <ul class="sublist">
+          <li>Networking Fundamentals</li>
+          <li>TCP/IP</li>
+          <li>CCNA Certification</li>
+        </ul>
+      </div>
+    </div>
+    <div class="im">
+      <img src="/dev.jpg" alt="">
+    </div>
+  </div>
+</body>
+</html>
